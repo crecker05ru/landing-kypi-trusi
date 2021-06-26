@@ -63,7 +63,7 @@ body{
     margin: 40px 0 0 10px;
 }
 .basket__logo{
-    background-color: aliceblue;
+    background-color: rgba(255, 229, 182,1);
     background-image: url("icons/shopping-cart.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +100,7 @@ a{
 .main{
     border: 5px solid antiquewhite;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
 }
 .content{
     border: 5px solid rgb(0, 247, 255);
@@ -119,12 +119,37 @@ a{
 .item__text{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.item__description{
+    text-align: justify;
+}
+.item__price{
+    margin-top: 10px;
+}
+button{
+    border-radius: 20px;
+    background-color: bisque;
+    padding: 5px;
+
+}
+.img{
+    border-radius: 12px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.img:hover{
+    transition: ease 0.4s;
+    transform: scale(2,2) translate(30px, 0);
+
+
 }
 .calveb-klein{
     background: url('images/ck-trousers.jpg') no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 300px;
 }
 .sidebar{
     border: 5px solid rgb(190, 130, 51);
@@ -135,10 +160,46 @@ a{
 .sidebar__links{
     text-align: center;
 }
+.first-level-li{
+    background-color: rgba(124, 57, 26,0.5);
+    border-radius: 5px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.2s;
+    position: relative;
+    
+}
+.first-level-li:hover{
+    background-color: rgba(124, 57, 26,1);
+    transition: ease 0.2s;
+}
+.first-level-li:hover  .second-level-ul{
+    display: block;
+    transition: ease 0.4s;
+}
+.second-level-ul{
+    display:  none;
+    transition: ease 0.4s;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(124, 57, 26,1);
+}
+
+.middle-text{
+    font-size: 22px;
+}
+.text-center{
+    text-align:center
+}
 .link{
     color: rgba(255,244,216,1);
     display: block;
-    margin-top: 10px;
+    text-align: center;
+    
 }
 .footer{
     border: 5px solid rgb(255, 0, 119);
