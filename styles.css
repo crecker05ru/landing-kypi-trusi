@@ -115,7 +115,7 @@ a{
 .item{
     padding:15px;
     margin: 10px auto  10px auto;
-    width: 230px;
+    width: 300px;
     height: 380px;
     background-color: rgba(49, 49, 49, 0.5);
     border-radius: 12px;
@@ -159,7 +159,7 @@ button{
 }
 .img:hover{
     transition: ease 0.4s;
-    transform: scale(1.5,1.5) translate(30px, 0);
+    transform: scale(1.4,1.4) translate(0, 20px);
 
 
 }
@@ -170,7 +170,7 @@ button{
 }
 .sidebar{
     /* border: 5px solid rgb(190, 130, 51); */
-    width: 300px;
+    width: 400px;
     height: 800px;
     margin: 10px;
 }
@@ -208,6 +208,7 @@ button{
     transition: ease 0.4s;
     /* position: absolute; */
     background-color: rgba(124, 57, 26,1);
+    border-radius: 4px;
     
 }
 .second-level-li:hover a{
@@ -217,7 +218,23 @@ button{
 }
 .first-level-ul:hover .second-level-li {
     display: block;
+    animation: growDown 700ms;
     transition: ease 0.6s;
+}
+.first-level-ul:active .second-level-li {
+    display: block;
+    transition: ease 0.6s;
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
 }
 .middle-text{
     font-size: 22px;
