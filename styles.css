@@ -94,8 +94,10 @@ body{
     height: 20px;
     margin: 0 10px 0 10px;
     line-height: 20px;
-
-
+}
+.user-login:hover{
+    background-color: rgba(255, 229, 182,1);
+    transition: ease 0.4s;
 }
 .basket__logo{
     background-color: rgba(255, 229, 182,1);
@@ -156,6 +158,7 @@ a{
     /* height: 590px; */
     height: 300px;
     /* border: 5px solid antiquewhite;  */
+    border-radius: 16px;
 }
 .main{
     /* border: 5px solid antiquewhite; */
@@ -174,6 +177,7 @@ a{
 }
 .items{
     width: 100%;
+    margin: 0 -25px 0 0;
 }
 .item{
      /* padding:15px;
@@ -244,6 +248,9 @@ vertical-align: top;
 .item__price{
     padding: 10px;
 }
+.item__price > span{
+    margin: 0 5px 0 0;
+}
 .item__button{
     display: inline-block;
     vertical-align:bottom;
@@ -287,6 +294,18 @@ vertical-align: top;
 }
 .lvt-2{
     background: url('images/louisvuitton-trousers-2.jpg') no-repeat;
+    background-size: cover;
+}
+.lacoste-1{
+    background: url('images/lacoste-trousers.jpg') no-repeat;
+    background-size: cover;
+}
+.ck-2{
+    background: url('images/ck-trousers-2.jpg') no-repeat;
+    background-size: cover;
+}
+.fila{
+    background: url('images/fila-trousers.jpg') no-repeat;
     background-size: cover;
 }
 .sidebar{
