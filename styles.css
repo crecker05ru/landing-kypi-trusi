@@ -39,12 +39,12 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 35px 0 0 20px;
     /* z-index: 2; */
 }
 .user{
     /* z-index: 2; */
-    margin: 20px;
+    margin: 25px 10px 10px 20px;
     background-color: rgba(56, 56, 55, 0.6);
     border-radius: 25px;
 }
@@ -98,7 +98,20 @@ body{
 }
 .basket__price{
     position: absolute;
-    left: 40px
+    left: 50px
+}
+.basket__count{
+    position: absolute;
+    background-color: rgba(255, 229, 182,1);
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 15px;
+    width: 25px;
+    height: 15px;
+    color: black;
+    border-radius: 16px;
+    left:20px;
+    top:-10px;
 }
 a{
     outline: none;
@@ -232,7 +245,7 @@ button{
     height: 260px;
     cursor: pointer;
     transition: ease 0.4s;
-    margin:auto;
+    margin: 10px 0 0 0;
 }
 .img:hover{
     transition: ease 0.4s;
@@ -247,8 +260,15 @@ button{
     height: 100%;
     position: absolute;
     top:0;
-    left:0; */
-    
+    left:0; */  
+}
+.calven-4{
+    background: url('images/ck-trousers-4.jpg') no-repeat;
+    background-size: cover;
+}
+.lvt-2{
+    background: url('images/louisvuitton-trousers-2.jpg') no-repeat;
+    background-size: cover;
 }
 .sidebar{
     /* border: 5px solid rgb(190, 130, 51); */
@@ -333,4 +353,21 @@ button{
 } */
 .footer__content{
     text-align: center;
+}
+@media (max-width: 980px){
+    .item{
+        width:46%;
+    }
+}
+@media (max-width: 765px){
+    .content{
+        width:99%;
+        padding: 40px 70px 20px 70px;
+    }
+    .item{
+        width:95%;
+    }
+    .sidebar{
+        display: none;
+    }
 }
